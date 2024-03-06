@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healer-k2</title>
+    <link rel="stylesheet" href="whats app.css">
+    <link rel="stylesheet" href="./src/css/all.min.css">
+    <link rel="stylesheet" href="./Query-header.css">
+    <link rel="stylesheet" href="./Query_left_section.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body >
+    <!--                                start  header -->
+    <header class="container">
+        <div class="el container col-12 col-md-12 col-sm-12">
+
+            <!-- start logo & Name  -->
+            <div class="head">
+                <img src="./src/IMG-20231013-WA0150.jpg" alt="" id="pic">
+                <h1>HEALER</h1>
+            </div>
+            <!-- start middle-section  -->
+            <div class="middle-section">
+                <div class="buttons">
+                    <button class="button">Chats</button>
+                    <button class="button">Status</button>
+                    <button class="button">Calls</button>
+                </div>
+            </div>
+            <!-- end middle-section  -->
+            <!-- start setting section -->
+            <div class="Setting">
+                <button class="sett" onclick="toggle()" >settings</button>
+                <ul id="list-sett" class="listt">
+                    <li class="suboneli" id="suboneli">
+                        <p onclick="listAccount()" class="text-list">Account</p>
+                        <ul class="listAccount" id="listAccount">
+                            <li>
+                                <img src="./src/IMG-20231013-WA0150.jpg" alt="">
+                                <h3>HEALER</h3>
+                            </li>
+                            <li>
+                                <p>Edit name</p>
+                                <p>Edit photo</p>
+                                <p>ID: ######</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="subtwoli">
+                        <p onclick="listPrivacy()" class="text-list">Privacy</p>
+                        <ul class="listPrivacy" id="listPrivacy">
+                            <li>
+                                <p>online     <span id="spannsone" onclick="spannsone()"><span   id="spanscircleone"></span></span></p>
+                                <p>show Image <span id="spannstwo" onclick="spannstwo()"><span   id="spanscircletwo"></span></span></p>
+                                <p>status     <span id="spannsthree" onclick="spannsthree()"><span id="spanscirclethree"></span></span></p>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="subthreeli">
+                        <p onclick="listAdd()" class="text-list">ADD</p>
+                        <ul class="listAdd" id="listAdd">
+                            <li>
+                                <p>Search</p>
+                                <input type="number" placeholder="search by code number">
+                            </li>
+                            <li>
+                                <div class="addone">
+                                    <img src="./src/IMG-20231013-WA0150.jpg" alt="">
+                                </div>
+                                <div class="addtwo">
+                                    <!-- <p><input type="text" placeholder="name" id="inp-Name"></p>
+                                    <p><input type="text" placeholder="Code" id="inp-code"></p> -->
+                                    <p>Name</p>
+                                    <p>######</p>
+                                    <button id="ADD" onclick="ADD()">ADD +</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="subfourli">
+                        <p  onclick="notify()" class="text-list">Notification</p>
+                        <div class="cont-notify" id="notification">
+                            <div class="notyfi-one" >
+                                <p>Airplan mode<span id="Airplan" onclick="Air()"><span id="air"></span></span></p>
+                                <p>Add Music<span>+</span></p>
+                            </div>
+                            <div class="notyfi-two">
+                                <p>music Added</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subfiveli">
+                        <p class="text-list" onclick="Storage()">Storage</p>
+                        <div class="storage" id="storage">
+                            <div class="send">
+                                <h3>Send Data</h3>
+                                <div class="types">
+                                    <p>.pdf</p>
+                                    <p>.img</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                            <div class="recives">
+                                <h3>Recives Data</h3>
+                                <div class="types">
+                                    <p>.pdf</p>
+                                    <p>.img</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sub-wallpaper">
+                        <p class="Wall-Paper" onclick="WallPaper()">Wall Paper</p>
+                        <div class="background" id="background">
+                            <div class="body">
+                                <button onclick="Bodyphoto()">Body</button>
+                                <div class="Downloadd" id="Downloadd-one">
+                                    <div class="ul-download upload">
+                                        <!-- <label for="upload" onclick="uploadAndSetWallpaper()">upload</label> -->
+                                        <input type="file" id="uploadd" accept="Image/png, Image/jpg, Image/jpeg">
+                                    </div>
+                                    <div class="ul-download">
+                                        <label for="opacity" >opacity</label>
+                                        <input type="range" id="opacity" min="0" max="100" value="100">
+                                    </div>
+                                    <div class="ul-download">
+                                        <label for="blur" >blur</label>
+                                        <input type="range" id="blur" min="0" max="100" value="50">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <button onclick="screenphoto()">Screen</button>
+                                <div class="Downloadd" id="Downloadd-two">
+                                    <div class="ul-download upload">
+                                        <!-- <label type="file"  for="upload" id="uploaddtwo" accept="Image/png, Image/jpg, Image/jpeg">upload</label> -->
+                                        <input type="file" id="uploaddtwo" accept="Image/png, Image/jpg, Image/jpeg">
+                                    </div>
+                                    <div class="ul-download">
+                                        <label for="opacity" >opacity</label>
+                                        <input type="range" id="opacity" min="0" max="100" value="100">
+                                    </div>
+                                    <div class="ul-download">
+                                        <label for="blur" >blur</label>
+                                        <input type="range" id="blur" min="0" max="100" value="50">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subsixli">
+                        <p onclick="Group()" class="gg">New group </p>
+                        <div class="Group" id="Group">
+                            <div>
+                                <img src="./src/IMG-20231013-WA0150.jpg" alt="">
+                                <p>FIRE CODE</p>
+                            </div>
+                            <div>
+                                <p>Name Of Group</p>
+                                <p>Desciption</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- end setting section -->
+        </div>
+    </header>
+    <!--                                end  header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--                               start title  -->
+    <section class="two" onclick="screen()">
+        <div class="content">
+            <!-- start left section -->
+            <div class="left-section" id="leftSection">
+                <!-- <img src="./src/IMG-20231013-WA0150.jpg" alt=""> -->
+
+                <div class="search">
+                    <input type="search" placeholder="Search" id="seerch">
+                </div>
+
+
+                <!-- start list -->
+                <div class="one" id="onee">
+                    <ul class="chat" id="list-ADD">
+                        <li>
+                            <img src="./src/IMG-20231013-WA0150.jpg" id="pic">
+                            <div class="content" id="persoon-2">
+                                <div class="title">
+                                    <p>Mostafa</p>
+                                    <p>11/8/2023</p>
+                                </div>
+                                <div class="message">
+                                    <p>Hello, iam mostafa</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="ss-two" id="scr">
+                <div class="chat">
+                    <nav>
+                        <div class="person">
+                            <img src="./src/IMG-20231013-WA0150.jpg" alt="" id="imgscreeen">
+                            <h3>mostafa</h3>
+                        </div>
+                        <div class="nav-button">
+                            <button class="list-chat" id="BtnPerson" onclick="lll()"><i class="fa-solid fa-expand"></i></button>
+                            <button><i class="fa-solid fa-video"></i></button>
+                            <button><i class="fa-solid fa-phone" style="color: #1bcdda;"></i></button>
+                            <button><i class="fa-solid fa-list"></i></button>
+                        </div>
+                    </nav>
+                    <div class="screen" id="screen">
+                        
+                    </div>
+                    <!-- start section-input -->
+                    <div class="inputs">
+                        <div class="left">
+                            <button><i class="fa-solid fa-face-smile"></i></button>
+                            <input id="inp" type="text"> 
+                            <button id="send"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                        <div class="right">
+                            <button><i class="fa-solid fa-camera"><video id="video" autoplay src=""></video></i></button>
+                            <button><i class="fa-solid fa-microphone" class="microphone"><audio src=""></audio></i></button>
+                        </div>
+                    </div>
+                    <!-- end section-input -->
+                </div>
+            </div>
+            <!-- end right section -->
+        </div>
+    </section>
+    <!--                                 end title  -->
+    <script src="./font awesome & Bootstrap/js/all.min.js"></script>
+    <script src="./font awesome & Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="whats app.js"></script>
+    <!-- <script src="./lists.js"></script> -->
+</body>
+</html>
+

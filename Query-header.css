@@ -1,0 +1,1426 @@
+/* start media-query  ( first-section )  */
+
+@media (max-width: 375px) {
+ body {
+    /* background-color: black; */
+    /* background-image: url(./naruto\ .jpg); */
+}
+    
+.container {
+    width: 375px;
+    height: 50px;
+}
+
+header .el {
+    width: 375px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .el .head {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    margin-left: 10px;
+    /* padding: 0; */
+}
+
+header .el .head h1 {
+    /* color: antiquewhite; */
+    margin: 0;
+    /* padding: 5px; */
+    font-size: 18px;
+}
+header .el .head h1:hover {
+    background:linear-gradient(to right ,purple ,whitesmoke) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+header .el .head img {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+}
+header .el .head img:hover {
+    transform: rotate(180deg);
+}
+/* end   logo & Name */
+/* start middle-section */
+.buttons {
+    width: fit-content;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.buttons .button {
+    color: black ;
+    background-color: #13b9de;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    /* font-size: 20px; */
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #13b9de8e;
+    letter-spacing: 2px;
+}
+/* end middle-section */
+/* start setting section  */
+
+.Setting {
+    height: 100%;
+    width : fit-content ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 15px;
+}
+.Setting .sett {
+    width: fit-content;
+    margin-left: 5px;
+    color: rgb(190, 154, 154) ;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+.Setting .listt {
+    position: absolute;
+    /* height: 100%; */
+    width: 120px;
+    height: fit-content;
+    background-color: silver;
+    border-radius: 20px;
+    right: 1%;
+    top: 50px;
+    display: none;  
+}
+.Setting .listt li {
+    /* margin-left: 20px; */
+    margin-top: 2px;
+    border-bottom: 2px solid #aaa;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Setting .listt li:last-child {
+    border-bottom:none ;
+}
+.Setting .listt li p {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: 1s;
+}
+.Setting .listt li .text-list:hover {
+    color: black;
+    /* font-weight: 500; */
+    margin-left: 10px;
+}
+
+
+/*                                                          list-account */
+.suboneli {
+    position: relative;
+    z-index: 2;
+}
+.Setting .listt .suboneli .listAccount {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    left: -154px;
+    border-radius: 20px;
+    background-color: silver;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.suboneli .listAccount li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    transition: .5s;
+    
+}
+.suboneli .listAccount img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.suboneli .listAccount p ,
+.suboneli .listAccount h3 {
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 0;
+    transition: 1s;
+}
+.suboneli .listAccount li p:hover ,
+.suboneli .listAccount li h3:hover {
+    margin-left: 5px;
+}
+
+
+
+/*                                                             list-privacy */
+.subtwoli {
+    position: relative;
+    z-index: 2;
+}
+.Setting .listt .subtwoli .listPrivacy {
+    position: absolute;
+    width: 200px;
+    height: 115px;
+    top: 0;
+    left: -204px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none;
+}
+.Setting .listt .subtwoli .listPrivacy li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+    transition: 2s;
+}
+.Setting .listt .subtwoli .listPrivacy li p {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    /* font-size: 17px; */
+}
+.Setting .listt .subtwoli .listPrivacy li p span {
+    width: 20%;
+    height: 20px;
+    background-color: #aaa;
+    position: relative;
+    border-radius: 20px;
+    background: red;
+    border-bottom: 2px solid black;
+}
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 5px;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p span span {
+    /* content: ""; */
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    border-radius: 50px;
+    /* left: 0; */
+    background-color:#040435;
+    text-align: left;
+    transition: .5s;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 0;
+}
+
+
+/*                                                                     list-Add*/
+.subthreeli {
+    position: relative;
+    z-index: 2;
+}
+.subthreeli .listAdd {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    top: 0;
+    left: -205px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none; 
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subthreeli .listAdd li:nth-child(1) {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    /* background-color: #13b9de; */
+    border-radius: 20px;
+}
+.subthreeli .listAdd li:nth-child(1) p {
+    display: none;
+}
+
+.subthreeli .listAdd li:nth-child(1) input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.subthreeli .listAdd li:nth-child(2) {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0px;
+    gap: 0px;
+}
+.subthreeli .listAdd li:nth-child(2) .addone {
+    width: 50%;
+    height: 100%;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img {
+    width: 90px;
+    height: 90px;
+    transition: 1s;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    z-index: 10;
+}
+.subthreeli .listAdd li:nth-child(2) .addtwo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.subthreeli .listAdd li:nth-child(1) p,
+.subthreeli .listAdd li:nth-child(2) p{
+    font-size: 15px;
+    transition: 1s ;
+    text-align: center;
+
+}
+.subthreeli .listAdd li p:hover {
+    margin-left: 5;
+}
+
+
+
+
+
+
+/*                                                                notify */
+.subfourli {
+    position: relative;
+    z-index: 2;
+}
+.cont-notify {
+    position: absolute;
+    width: 200px;
+    /* height: 150px; */
+    height: fit-content;
+    padding: 10px 10px;
+    left: -200;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    border-radius: 20px;
+    margin-left:-211px ;
+    /* overflow: hidden; */
+    display: none;
+}
+.cont-notify .notyfi-one {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+.cont-notify .notyfi-one p {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    /* border-bottom: 2px solid #aaa; */
+}
+.cont-notify .notyfi-one p:nth-child(1) span
+{
+    width: 40px;
+    height: 20px;   
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+    border: none;
+    outline: none;
+}
+.cont-notify .notyfi-one p:nth-child(1) span span {
+    position: absolute;
+    left: 0;
+    background-color: #040435;
+    width: 50%;
+    height: 100%;
+}
+.cont-notify .notyfi-one p:nth-child(2) span {
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.notyfi-two {
+    width: 100%;
+    height: 30px;
+    padding-bottom: 10px;
+}
+/*                                                                storage */
+.subfiveli {
+    position: relative;
+    z-index: 2;
+}
+.storage {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* height: fit-content; */
+    padding: 10px 10px;
+    left: -205px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    display: none;
+}
+.storage .send ,
+.storage .recives {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.storage .send h3 ,
+.storage .recives h3{
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #aaa;
+}
+.storage .send .types ,
+.storage .recives .types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+/*                                                            Group */
+.subsixli {
+    position: relative;
+    z-index: 2;
+}
+.subsixli .gg:hover {
+    margin-left: 10px;
+}
+.subsixli .Group {
+    position: absolute;
+    width: 200px ;
+    height: 200px;
+    top: 0px;
+    left:-200px ;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    border-radius: 20px;
+    display: none;
+}
+.subsixli .Group div {
+    width: 100% ;
+    height: 50%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #aaa;
+}
+.subsixli .Group div:nth-child(2) {
+    border-bottom: none;
+}
+.subsixli .Group div p {
+    text-align: center;
+}
+
+
+/*                                                             wall paper */
+.sub-wallpaper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-wallpaper .Wall-Paper {
+    width: 100%;
+}
+.sub-wallpaper .background {
+    position: absolute;
+    width: 148px;
+    height: 67px;
+    left: -151px;
+    top: 0px;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 30px;
+    /* background-color: silver; */
+    display: none;
+    text-align: center;
+}
+.sub-wallpaper .background .body {
+    position: relative;
+    height: 30px;
+    /* color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-wallpaper .background .body button {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: silver;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sub-wallpaper .background .body .Downloadd {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 0px;
+    top: 60px;
+    background-color: silver;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: none;
+}
+.sub-wallpaper .background .body .Downloadd .ul-download {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sub-wallpaper .background .body .Downloadd .ul-download label {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sub-wallpaper .background .body .upload input{
+    width: 80%;
+    height: 80%;
+    /* display: none; */
+}
+.sub-wallpaper .background .body .upload input p {
+    display: none;
+}
+.sub-wallpaper .background .body .upload label {
+    font-size: 20px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+/* End setting section  */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) and (max-width: 768px) {
+    body {
+        /* background-color: black; */
+        /* background-image: url(./coffee\ &\ Book.jpg); */
+    }
+    
+.container {
+    width: 768px;
+    height: 50px;
+}
+
+
+header .el {
+    width: 768px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .el .head {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    margin-left: 10px;
+    /* padding: 0; */
+}
+
+header .el .head h1 {
+    /* color: antiquewhite; */
+    margin: 0;
+    /* padding: 5px; */
+    font-size: 25px;
+}
+header .el .head h1:hover {
+    background:linear-gradient(to right ,purple ,whitesmoke) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+header .el .head img {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
+header .el .head img:hover {
+    transform: rotate(180deg);
+}
+/* end   logo & Name */
+/* start middle-section */
+.buttons {
+    width: 400px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.buttons .button {
+    color: black ;
+    background-color: #13b9de;
+    padding: 5px 30px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    /* font-size: 20px; */
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #13b9de8e;
+    letter-spacing: 2px;
+}
+/* end middle-section */
+/* start setting section  */
+
+.Setting {
+    height: 100%;
+    width : fit-content ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 15px;
+}
+.Setting .sett {
+    width: fit-content;
+    margin-left: 5px;
+    color: rgb(190, 154, 154) ;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+.Setting .listt {
+    position: absolute;
+    /* height: 100%; */
+    width: 120px;
+    height: fit-content;
+    background-color: silver;
+    border-radius: 20px;
+    right: 1%;
+    top: 50px;
+    display: none;  
+}
+.Setting .listt li {
+    /* margin-left: 20px; */
+    margin-top: 2px;
+    border-bottom: 2px solid #aaa;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Setting .listt li:last-child {
+    border-bottom:none ;
+}
+.Setting .listt li p {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: 1s;
+}
+.Setting .listt li .text-list:hover {
+    color: black;
+    /* font-weight: 500; */
+    margin-left: 10px;
+}
+
+
+/*                                                          list-account */
+.suboneli {
+    position: relative;
+    z-index: 2;
+}
+.Setting .listt .suboneli .listAccount {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    left: -154px;
+    border-radius: 20px;
+    background-color: silver;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.suboneli .listAccount li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    transition: .5s;
+    
+}
+.suboneli .listAccount img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.suboneli .listAccount p ,
+.suboneli .listAccount h3 {
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 0;
+    transition: 1s;
+}
+.suboneli .listAccount li p:hover ,
+.suboneli .listAccount li h3:hover {
+    margin-left: 5px;
+}
+
+
+
+/*                                                             list-privacy */
+.subtwoli {
+    position: relative;
+    z-index: 2;
+}
+.Setting .listt .subtwoli .listPrivacy {
+    position: absolute;
+    width: 200px;
+    height: 115px;
+    top: 0;
+    left: -204px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none;
+}
+.Setting .listt .subtwoli .listPrivacy li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+    transition: 2s;
+}
+.Setting .listt .subtwoli .listPrivacy li p {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    /* font-size: 17px; */
+}
+.Setting .listt .subtwoli .listPrivacy li p span {
+    width: 20%;
+    height: 20px;
+    background-color: #aaa;
+    position: relative;
+    border-radius: 20px;
+    background: red;
+    border-bottom: 2px solid black;
+}
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 5px;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p span span {
+    /* content: ""; */
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    border-radius: 50px;
+    /* left: 0; */
+    background-color:#040435;
+    text-align: left;
+    transition: .5s;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 0;
+}
+
+
+/*                                                                     list-Add*/
+.subthreeli {
+    position: relative;
+    z-index: 2;
+}
+.subthreeli .listAdd {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    top: 0;
+    left: -205px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none; 
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subthreeli .listAdd li:nth-child(1) {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    /* background-color: #13b9de; */
+    border-radius: 20px;
+}
+.subthreeli .listAdd li:nth-child(1) p {
+    display: none;
+}
+
+.subthreeli .listAdd li:nth-child(1) input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.subthreeli .listAdd li:nth-child(2) {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0px;
+    gap: 0px;
+}
+.subthreeli .listAdd li:nth-child(2) .addone {
+    width: 50%;
+    height: 100%;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img {
+    width: 90px;
+    height: 90px;
+    transition: 1s;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    z-index: 10;
+}
+.subthreeli .listAdd li:nth-child(2) .addtwo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.subthreeli .listAdd li:nth-child(1) p,
+.subthreeli .listAdd li:nth-child(2) p{
+    font-size: 15px;
+    transition: 1s ;
+    text-align: center;
+
+}
+.subthreeli .listAdd li p:hover {
+    margin-left: 5;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+body {
+    /* background-color: black; */
+    /* background-image: url(./coffee\ &\ Book.jpg); */
+}
+    
+.container {
+    width: 992px;
+    height: 50px;
+}
+
+
+header .el {
+    width: 992px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .el .head {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    margin-left: 10px;
+    /* padding: 0; */
+}
+
+header .el .head h1 {
+    /* color: antiquewhite; */
+    margin: 0;
+    /* padding: 5px; */
+    font-size: 25px;
+}
+header .el .head h1:hover {
+    background:linear-gradient(to right ,purple ,whitesmoke) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+header .el .head img {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
+header .el .head img:hover {
+    transform: rotate(180deg);
+}
+/* end   logo & Name */
+/* start middle-section */
+.buttons {
+    width: 400px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.buttons .button {
+    color: black ;
+    background-color: #13b9de;
+    padding: 5px 30px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    /* font-size: 20px; */
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #13b9de8e;
+    letter-spacing: 2px;
+}
+/* end middle-section */
+/* start setting section  */
+
+.Setting {
+    height: 100%;
+    width : fit-content ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 15px;
+}
+.Setting .sett {
+    width: fit-content;
+    margin-left: 5px;
+    color: rgb(190, 154, 154) ;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+.Setting .listt {
+    position: absolute;
+    /* height: 100%; */
+    width: 120px;
+    height: fit-content;
+    background-color: silver;
+    border-radius: 20px;
+    right: 1%;
+    top: 50px;
+    display: none;  
+}
+.Setting .listt li {
+    /* margin-left: 20px; */
+    margin-top: 2px;
+    border-bottom: 2px solid #aaa;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Setting .listt li:last-child {
+    border-bottom:none ;
+}
+.Setting .listt li p {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: 1s;
+}
+.Setting .listt li .text-list:hover {
+    color: black;
+    /* font-weight: 500; */
+    margin-left: 10px;
+}
+
+
+/*                                                          list-account */
+.suboneli {
+    position: relative;
+    z-index: 2;
+}
+.Setting .listt .suboneli .listAccount {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    left: -154px;
+    border-radius: 20px;
+    background-color: silver;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.suboneli .listAccount li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    transition: .5s;
+    
+}
+.suboneli .listAccount img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.suboneli .listAccount p ,
+.suboneli .listAccount h3 {
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 0;
+    transition: 1s;
+}
+.suboneli .listAccount li p:hover ,
+.suboneli .listAccount li h3:hover {
+    margin-left: 5px;
+}
+
+
+
+/*                                                             list-privacy */
+.subtwoli {
+    position: relative;
+    z-index: 2;
+}
+.Setting .listt .subtwoli .listPrivacy {
+    position: absolute;
+    width: 200px;
+    height: 115px;
+    top: 0;
+    left: -204px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none;
+}
+.Setting .listt .subtwoli .listPrivacy li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+    transition: 2s;
+}
+.Setting .listt .subtwoli .listPrivacy li p {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    /* font-size: 17px; */
+}
+.Setting .listt .subtwoli .listPrivacy li p span {
+    width: 20%;
+    height: 20px;
+    background-color: #aaa;
+    position: relative;
+    border-radius: 20px;
+    background: red;
+    border-bottom: 2px solid black;
+}
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 5px;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p span span {
+    /* content: ""; */
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    border-radius: 50px;
+    /* left: 0; */
+    background-color:#040435;
+    text-align: left;
+    transition: .5s;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 0;
+}
+
+
+/*                                                                     list-Add*/
+.subthreeli {
+    position: relative;
+    z-index: 2;
+}
+.subthreeli .listAdd {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    top: 0;
+    left: -205px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none; 
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subthreeli .listAdd li:nth-child(1) {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    /* background-color: #13b9de; */
+    border-radius: 20px;
+}
+.subthreeli .listAdd li:nth-child(1) p {
+    display: none;
+}
+
+.subthreeli .listAdd li:nth-child(1) input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.subthreeli .listAdd li:nth-child(2) {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0px;
+    gap: 0px;
+}
+.subthreeli .listAdd li:nth-child(2) .addone {
+    width: 50%;
+    height: 100%;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img {
+    width: 90px;
+    height: 90px;
+    transition: 1s;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    z-index: 10;
+}
+.subthreeli .listAdd li:nth-child(2) .addtwo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.subthreeli .listAdd li:nth-child(1) p,
+.subthreeli .listAdd li:nth-child(2) p{
+    font-size: 15px;
+    transition: 1s ;
+    text-align: center;
+
+}
+.subthreeli .listAdd li p:hover {
+    margin-left: 5;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end media-query  ( first-section )  */

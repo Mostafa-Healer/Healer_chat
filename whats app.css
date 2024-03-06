@@ -1,0 +1,981 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: black; */
+    background-image: url(./src/1318225.png);
+    background-size:cover;
+    background-position-x:100vw;
+    background-position-y: 100vh;
+    font-family: 'Dancing Script';
+}
+ul li {
+    list-style: none;
+    font-family: 'Dancing Script', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+button {
+    font-family: 'Dancing Script', cursive;
+}
+p::selection {
+    background: transparent;
+}
+p {
+    cursor: pointer;
+}
+.active {
+    background-color: #040435;
+}
+/*                                                                       start   section-one  */
+
+/* start logo & Name */
+
+
+
+.container {
+    width: 100%;
+    height: 60px;
+}
+header .el {
+    width: 100% ;
+    height: 100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .el .head {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .el .head h1 {
+    /* color: antiquewhite; */
+    color: rgb(201, 58, 201);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+}
+header .el .head h1:hover {
+    background:linear-gradient(to right ,purple ,whitesmoke) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+header .el .head img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    transition: 2s;
+}
+header .el .head img:hover {
+    transform: rotate(180deg);
+}
+/* end   logo & Name */
+/* start middle-section */
+.buttons {
+    height: 100%;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons .button {
+    color: black ;
+    background-color: #13b9de;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #13b9de8e;
+    letter-spacing: 2px;
+}
+/* end middle-section */
+/* start setting section  */
+
+.Setting {
+    height: 100%;
+    width : 12% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Setting .sett {
+    width: 70%;
+    color: rgb(190, 154, 154) ;
+    background-color: black;
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+.Setting .listt {
+    position: absolute;
+    height: 100%;
+    width: 220px;
+    height: fit-content;
+    background-color: silver;
+    border-radius: 20px;
+    right: 2%;
+    top: 78px;
+    display: none;  
+}
+.Setting .listt li {
+    /* margin-left: 20px; */
+    margin-top: 2px;
+    border-bottom: 2px solid #aaa;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Setting .listt li:last-child {
+    border-bottom:none ;
+}
+.Setting .listt li p {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: 1s;
+}
+.Setting .listt li .text-list:hover {
+    color: black;
+    /* font-weight: 500; */
+    margin-left: 10px;
+}
+
+/*                                                          list-account */
+.suboneli {
+    position: relative;
+}
+.Setting .listt .suboneli .listAccount {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    left: -154px;
+    border-radius: 20px;
+    background-color: silver;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.suboneli .listAccount li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    transition: .5s;
+    
+}
+.suboneli .listAccount img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.suboneli .listAccount p ,
+.suboneli .listAccount h3 {
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 0;
+    transition: 1s;
+}
+.suboneli .listAccount li p:hover ,
+.suboneli .listAccount li h3:hover {
+    margin-left: 5px;
+}
+
+/*                                                             list-privacy */
+.subtwoli {
+    position: relative;
+}
+.Setting .listt .subtwoli .listPrivacy {
+    position: absolute;
+    width: 200px;
+    height: 115px;
+    top: 0;
+    left: -204px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none;
+}
+.Setting .listt .subtwoli .listPrivacy li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+    transition: 2s;
+}
+.Setting .listt .subtwoli .listPrivacy li p {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    /* font-size: 17px; */
+}
+.Setting .listt .subtwoli .listPrivacy li p span {
+    width: 20%;
+    height: 20px;
+    background-color: #aaa;
+    position: relative;
+    border-radius: 20px;
+    background: red;
+    border-bottom: 2px solid black;
+}
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 5px;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p span span {
+    /* content: ""; */
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    border-radius: 50px;
+    /* left: 0; */
+    background-color:#040435;
+    text-align: left;
+    transition: .5s;
+}
+
+.Setting .listt .subtwoli .listPrivacy li p:hover {
+    margin-left: 0;
+}
+
+/*                                                                     list-Add*/
+.subthreeli {
+    position: relative;
+}
+.subthreeli .listAdd {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    left: -403px;
+    border-radius: 20px;
+    background-color: silver;
+    transition: 2s;
+    display: none; 
+    /* text-align: left; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.subthreeli .listAdd li:nth-child(1) {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    /* background-color: #13b9de; */
+    border-radius: 20px;
+}
+.subthreeli .listAdd li:nth-child(1) p {
+    width: 50%;
+    height: 100%;
+}
+.subthreeli .listAdd li:nth-child(1) input {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.subthreeli .listAdd li:nth-child(2) {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+    gap: 60px;
+}
+.subthreeli .listAdd li:nth-child(2) .addone {
+    width: 50%;
+    height: 100%;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img {
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+.subthreeli .listAdd li:nth-child(2) .addone img:hover {
+    width: 400px;
+    height: 400px;
+    border-radius: 20%;
+    z-index: 10;
+}
+.subthreeli .listAdd li:nth-child(2) .addtwo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.subthreeli .listAdd li:nth-child(1) p,
+.subthreeli .listAdd li:nth-child(2) p{
+    font-size: 20px;
+    transition: 1s ;
+    text-align: center;
+
+}
+.subthreeli .listAdd li p:hover {
+    margin-left: 5;
+}
+
+
+/*                                                                notify */
+.subfourli {
+    position: relative;
+}
+.cont-notify {
+    position: absolute;
+    width: 200px;
+    /* height: 150px; */
+    height: fit-content;
+    padding: 10px 10px;
+    left: -200;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    border-radius: 20px;
+    margin-left:-211px ;
+    /* overflow: hidden; */
+    display: none;
+}
+.cont-notify .notyfi-one {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+.cont-notify .notyfi-one p {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    /* border-bottom: 2px solid #aaa; */
+}
+.cont-notify .notyfi-one p:nth-child(1) span
+{
+    width: 40px;
+    height: 20px;   
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+    border: none;
+    outline: none;
+}
+.cont-notify .notyfi-one p:nth-child(1) span span {
+    position: absolute;
+    left: 0;
+    background-color: #040435;
+    width: 50%;
+    height: 100%;
+}
+.cont-notify .notyfi-one p:nth-child(2) span {
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.notyfi-two {
+    width: 100%;
+    height: 30px;
+    padding-bottom: 10px;
+}
+/*                                                                storage */
+.subfiveli {
+    position: relative;
+}
+.storage {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* height: fit-content; */
+    padding: 10px 10px;
+    left: -205px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    display: none;
+}
+.storage .send ,
+.storage .recives {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.storage .send h3 ,
+.storage .recives h3{
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #aaa;
+}
+.storage .send .types ,
+.storage .recives .types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+/*                                                            Group */
+.subsixli {
+    position: relative;
+}
+.subsixli .gg:hover {
+    margin-left: 10px;
+}
+.subsixli .Group {
+    position: absolute;
+    width: 200px ;
+    height: 200px;
+    top: 0px;
+    left:-200px ;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    border-radius: 20px;
+    display: none;
+}
+.subsixli .Group div {
+    width: 100% ;
+    height: 50%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #aaa;
+}
+.subsixli .Group div:nth-child(2) {
+    border-bottom: none;
+}
+.subsixli .Group div p {
+    text-align: center;
+}
+
+
+/*                                                             wall paper */
+.sub-wallpaper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-wallpaper .Wall-Paper {
+    width: 100%;
+}
+.sub-wallpaper .background {
+    position: absolute;
+    width: 148px;
+    height: 67px;
+    left: -151px;
+    top: 0px;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 30px;
+    /* background-color: silver; */
+    display: none;
+    text-align: center;
+}
+.sub-wallpaper .background .body {
+    position: relative;
+    height: 30px;
+    /* color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-wallpaper .background .body button {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: silver;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sub-wallpaper .background .body .Downloadd {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: -203px;
+    top: 0;
+    background-color: silver;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: none;
+}
+.sub-wallpaper .background .body .Downloadd .ul-download {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sub-wallpaper .background .body .Downloadd .ul-download label {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sub-wallpaper .background .body .upload input{
+    width: 80%;
+    height: 80%;
+    /* display: none; */
+}
+.sub-wallpaper .background .body .upload input p {
+    display: none;
+}
+.sub-wallpaper .background .body .upload label {
+    font-size: 20px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+/* End setting section  */
+/*                                                                       end   section-one  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                                        start section-two */
+
+
+
+
+
+.two {
+    width: 100%;
+    height: 587px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two .content {
+    width: 95%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #040435a2;
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    overflow: hidden;
+}
+/* start search-section */
+.two .content .left-section {
+    width: 20%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: silver; */
+}
+
+.two .content .search {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two .content .search input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    color: whitesmoke;
+    /* background-color: #040435; */
+    background-color: #040435a2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two .content .search input:focus {
+    border: 1px solid silver;
+}
+
+
+/* start list  */
+.two .content .one {
+    width: 100%;
+    height: 100%;
+    background-color: #040435a2;
+    /* background-color: #040435; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    position: relative;
+    margin-top: 5px;
+}
+/* 
+.two .content .one::after {
+    content: "";
+    position: absolute;
+    right: -10px; 
+    width: 2px;
+    border-radius: 5px;
+    height: 100%;
+    color:black; 
+    background: whitesmoke;
+}  */
+.two .content .one ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 97%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.two .content .one ul li {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+
+.two .content .one ul li .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #13b9de;
+    border-radius: 20px;
+    width: 100%;
+    height: fit-content;
+    margin-left:5px;
+}
+
+.two .content .one ul li .content .title {
+    color: #040435;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.two .content .one ul li .content .message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #040435;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.two .content .one ul li img ,
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* end list-section */
+/*                                                                        end section-two */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start screen */
+.ss-two{
+    width: 78%;
+    height: 95%;
+    /* background: #13b9de; */
+    border-radius: 20px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5%;
+    transition: 1s;
+}
+
+.ss-two .chat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ss-two .chat nav {
+    width: 98%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13b9de9c;
+    padding: 5px 0;
+}
+
+.ss-two .chat nav .person {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ss-two .chat nav .person h3 {
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+.ss-two .chat nav .person img {
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.ss-two .chat nav .nav-button button {
+    font-size: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    /* background-color: white; */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.ss-two .chat nav .nav-button button:hover {
+    transform: scale(1.1);
+}
+
+.ss-two .chat .screen {
+    width: 98%;
+    height: 84%;
+    margin-left:1% ;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url();
+    background-size: cover;
+    background-position-y: 100%;
+    background-position-x: 100%; 
+    /* background-position-y: 142vh; */
+    /* background-position-x: 72.5vw; */
+    /* background-color: #13b9de; */
+}
+
+.ss-two .chat .screen p {
+    width: fit-content;
+    height: fit-content;
+    max-width: 500px;
+    max-height: fit-content;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    color: whitesmoke;
+    background-color:#040435;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: start;
+    font-weight: 800;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/* start section-input  */
+.ss-two .chat .inputs {
+    width: 97%;
+    height: 40px;
+    background-color: #13b9de9c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ss-two .chat .inputs .left {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1%;
+}
+
+.ss-two .chat .inputs .left input {
+    height: 30px;
+    width:800px ;
+    display:flex ;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: #040435;
+    color: whitesmoke;
+    text-align: center;
+}
+.ss-two .chat .inputs .left button {
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #13b9de00;
+    margin-right: 1%;
+    cursor: pointer;
+    color: black;
+}
+
+.ss-two .chat .inputs .right {
+    width: fit-content;
+}
+.ss-two .chat .inputs .right button {
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #13b9de00;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #040435;
+}
+
+#send {
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    color:#040435;
+}
+
+
+
+/*                                 end section-three */
