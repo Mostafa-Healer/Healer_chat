@@ -488,7 +488,6 @@ enter.addEventListener('onKeyup',(e)=>{
 
 })
 
-
 async function getMicrophoneStream() {
     try {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
