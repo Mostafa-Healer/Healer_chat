@@ -440,7 +440,7 @@ uploadd.addEventListener("change",function() {
     reader.readAsDataURL(this.files[0]);
 });
 function bbb(){
-    document.body.style.background = `url(${JSON.parse(localStorage.photoBody)})`;
+    // document.body.style.background = `url(${JSON.parse(localStorage.photoBody)})`;
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundPositionX = 'center';
     document.body.style.backgroundPositionY = 'center';
@@ -467,7 +467,7 @@ uploaddtwo.addEventListener("change",function() {
     reader.readAsDataURL(this.files[0]);
 });
 function sss(){
-    screenn.style.background = `url(${JSON.parse(localStorage.photoscreen)})`;
+    // screenn.style.background = `url(${JSON.parse(localStorage.photoscreen)})`;
     screenn.style.backgroundSize = '100%';
     screenn.style.backgroundPositionX = 'center';
     screenn.style.backgroundPositionY = 'center';
@@ -494,7 +494,7 @@ async function getMicrophoneStream() {
       // Use the 'stream' object for further processing (e.g., recording, streaming).
     console.log('Microphone stream obtained:', stream);
     } catch (error) {
-    console.error('Error accessing microphone:', error);
+    // console.error('Error accessing microphone:', error);
     }
 }
 
@@ -526,7 +526,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     })
     .catch(function(error) {
         // Handle the error
-        console.error(error);
+        // console.error(error);
     });
 } else {
     // Display a message that the browser does not support the API
